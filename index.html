@@ -4,8 +4,15 @@
 <script type="text/javascript">
 var redirect = function() {
   
-  _frame = document.getElementById('targetframe');
-  _frame.src = 'http://jvf.li/'+window.location.search.replace('?','');
+  var _search = window.location.search;
+  var _frame = document.getElementById('targetframe');
+  
+  if (_search == '') {
+    window.location.href = 'http://slicedrop.com';
+  } else {
+    _frame.src = 'http://jvf.li/'+_search.replace('?','');
+  }
+  
 }
 </script>
 </head>
