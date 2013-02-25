@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>My Slice:Drop</title>
+<script type="text/javascript">
+var redirect = function() {
+  
+  _frame = document.getElementById('targetframe');
+  _frame.src = 'http://jvf.li/'+window.location.search.replace('?','');
+}
+</script>
+</head>
+<frameset rows="100%" onload="redirect()">
+<frame id='targetframe' src="#"></frame>
+</frameset>
+</html>
