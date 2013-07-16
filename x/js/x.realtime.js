@@ -5,6 +5,14 @@ RT.pusher = null;
 
 RT.link = function() {
 
+    // switch to the blue icon
+    $('#linklogo').hide();
+    $('#linkselectedlogo').show();
+
+}
+
+RT.sglink = function() {
+
   if ( !RT.linked ) {
 
     var _location = (window.location != window.parent.location) ? document.referrer
